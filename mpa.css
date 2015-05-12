@@ -17,14 +17,32 @@ html, body {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  color: #85ADFF;
+  
 }
+
+.map-home h1 {
+  font-size: 120px;
+  font-weight: 700;
+  text-shadow: 0 0 2px #222, 0 0 2px #222;
+  /*color: #85ADFF;*/
+  color: #FFFFFF;
+}
+
+.map-home h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0 0 2px #222, 0 0 2px #222;
+  /*color: #85ADFF;*/
+  color: #FFFFFF;
+}
+
+/*
 .text-vcenter h1 {
   font-size: 4.5em;
   font-weight: 700;
   margin: 0;
   padding: 0;
-}
+} */
 
 .mpa-section h1, h2, h3 {
   font-family: "futura-pt", Futura, sans-serif;
@@ -47,9 +65,27 @@ html, body {
 }
 
 .mpa-section {
+  margin: 0 0 0px;
   background-color: #A5D6A7;
   color: #1B5E20;
 }
+
+.mpa-section h3 {
+  font-size: 40px;
+  font-family: "futura-pt", Futura, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  border-bottom: 4px double #1B5E20;
+}
+
+.speaker-img{
+  border: 2px solid #000000;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  opacity: .8;
+}
+
 #services .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
@@ -101,6 +137,14 @@ html, body {
   background-size: cover;
 }
 
+.mpa-mid-section {
+  background-color: #E8F5E9;
+}
+
+.mpa-mid-sponsors {
+  height: 75px;
+}
+
 .venue-pl {
   background: url(img/bg3.jpg) no-repeat center center fixed;
   display: table;
@@ -127,4 +171,15 @@ footer .glyphicon {
 }
 footer .glyphicon:hover {
   color: #306d9f;
+}
+
+.carousel,
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+  background-color: #E8F5E9;
+}
+
+.carousel-control {
+  color: #000000;
 }
