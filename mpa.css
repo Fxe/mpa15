@@ -144,7 +144,7 @@ html, body {
 }
 
 .mpa-mid-section {
-  background-color: #E8F5E9;
+  background-color: #FFFFFF;
 }
 
 .mpa-mid-sponsors {
@@ -189,9 +189,15 @@ footer .glyphicon:hover {
 .carousel-control.right,
 .carousel-control.left {
   background-image: none;
-  background-color: #E8F5E9;
+  background-color: #FFFFFF;
 }
 
 .carousel-control {
   color: #000000;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img{
+  width: 200px; /* use this, or not */
+  margin: auto;
 }
