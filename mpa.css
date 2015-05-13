@@ -92,6 +92,18 @@ html, body {
   opacity: .8;
 }
 
+.speaker-box {
+  margin: 10px 10px;
+  padding: 10px 0px;
+  border: 4px solid currentColor;
+}
+
+/*
+.speaker-box h4 {
+  font-size: 1vw;
+}
+*/
+
 #services .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
