@@ -5,6 +5,42 @@
   <title>MPA</title>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.css">
   <link rel="stylesheet" href="mpa.css">
+<style type="text/css">
+/* Custom Styles */
+ul.nav-tabs {
+	width: 140px;
+	margin-top: 20px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li {
+	margin: 0;
+	border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child {
+	border-top: none;
+}
+ul.nav-tabs li a {
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+	color: #fff;
+	background: #0088cc;
+	border: 1px solid #0088cc;
+}
+ul.nav-tabs li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix {
+	top: 30px; /* Set the top position of pinned element */
+}
+</style>
 </head>
 <body>
 
@@ -19,7 +55,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
       <a class="navbar-brand" href="#">Metabolic Pathway Analysis 2015</a>
+      <!--<img alt="Biochemical Society"  src="img/BS_banner.png">-->
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse-main">
@@ -110,7 +148,7 @@
     </div>
   </div>
 </div>
-<div id="information" class="pad-section">
+<div id="information" class="pad-section" data-spy="scroll" data-target="#myScrollspy">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
@@ -139,11 +177,30 @@
             <h2 class="panel-title">Session 2 – Uncovering Biological Principles</h2>
           </div>
           <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+            Tuesday 9 June 2015<br>
+            <br>09:00 - 09:40<br>
+            Coping with noisy metabolism in the bacterial microenvironment<br>
+            <b>Nathan Lewis</b> (University of California San Diego, U.S.A.)<br>
+            <br>09:40 - 10:20<br>
+            Transcriptional vs post-transcriptional regulation of the central carbon metabolism of E. coli<br>
+            Daniel Machado (University of Minho, Portugal)<br>
+            <br>10:20 - 10:50 Coffee break<br>
+            <br>10:50 - 11:30<br>
+            Network-level architecture and the evolutionary potential of underground metabolism<br>
+            Ferenc Pal (Biological Research Centre of the Hungarian Academy of Sciences, Hungary)<br>
+            <br>11:30 - 12:10<br>
+            Investigating the fitness effects of aerobic fermentation in yeast<br>
+            Thomas Pfeiffer (Massey University, New Zealand)<br>
+            <br>12:10 - 12:50<br>
+            Dynamics of NAD-metabolism - everything but constant<br>
+            Ines Heiland (University of Tromsø, Norway)<br>
+            <br>12:50 - 14:00 Lunch
+
           </div>
         </div>
       </div>
     </div>
+    <!-- S3/4 -->
     <div class="row">
       <div class="col-sm-6">
         <div class="panel panel-default">
@@ -151,7 +208,22 @@
             <h2 class="panel-title">Session 3 – Methods and Tools</h2>
           </div>
           <div class="panel-body lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
+            Tuesday 9 June 2015<br>
+            <br>14:00 - 14:40<br>
+            Alternate integer linear programming for computing elementary modes from genome-scale metabolic networks<br>
+            Hyun-Seob Song (Pacific Northwest National Laboratory, U.S.A.)<br>
+            <br>14:40 - 15:20<br>
+            Optimal resource allocation in metabolic networks<br>
+            Stefan Mueller (Radon Institute for Computational and Applied Mathematics (RICAM), Austria)<br>
+            <br>15:20 - 15:40 Coffee break<br>
+            <br>15:40 - 16:20<br>
+            Hierarchical decomposition of metabolic networks using k-modules<br>
+            Arne Reimers (Centrum Wiskunde & Informatica, Netherlands)<br>
+            <br>16:20 - 17:00<br>
+            Reconciling gene expression data with regulatory network models<br>
+            José Faria (Argonne National Laboratory, U.S.A.)<br>
+            <br>17:00 - 20:00 Poster session 1 & drinks<br>
+            <br>20:00 Dinner<br>
           </div>
         </div>
       </div>
@@ -159,6 +231,129 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">Session 4 – Applications to Photosynthetic organisms and Microbial Communities</h2>
+          </div>
+          <div class="panel-body lead">
+            Wednesday 10 June 2015<br>
+            <br>08:30 - 09:10<br>
+            Investigating lipid production in a genome scale model of Phaeodactylum tricornutum<br>
+            Dipali Singh (Oxford Brookes University, United Kingdom)<br>
+            <br>09:10 - 09:50<br>
+            Modelling evolutionary reversibility of a metabolic pathway: C4 photosynthesis<br>
+            David Heckmann (HHU Duesseldorf, Germany)<br>
+            <br>09:50 - 10:30<br>
+            A reductionist approach to model self-regulating systems in plants<br>
+            Anna Matuszyńska (Heinrich-Heine University Düsseldorf, Germany)<br>
+            <br>10:30 - 11:00 Coffee break<br>
+            <br>11:00 - 11:40<br>
+            Spatio-temporal models of metabolism in microbial communities<br>
+            Daniel Segre (Boston University, U.S.A.)<br>
+            <br>11:40 - 12:20<br>
+            Stoichiometric analysis of primary autotrophy and biomass turnover in a thermoacidophilic iron oxidizing archaeal community<br>
+            Kristopher Hunt (Montana State University, U.S.A.)<br>
+            <br>12:20 - 13:00<br>
+            Spatiotemporal metabolic modeling of microbial biofilm consortia<br>
+            Michael Henson (University of Massachusetts, U.S.A.)<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- S5/6 -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Session 5 - Applications in Health</h2>
+          </div>
+          <div class="panel-body lead">
+
+Thursday 11 June 2015<br>
+<br>09:00 - 09:40<br>
+A minimal model for explaining the Warburg effect<br>
+Stefan Schuster (University of Jena, Germany)<br>
+<br>09:40 - 10:20<br>
+Reconstruction of Caenorhabditis elegans metabolism - a new resource to support healthy aging in nematodes<br>
+Christoph Kaleta (Christian-Albrechts-Universität zu Kiel, Germany)<br>
+<br>10:20 - 10:50 Coffee break<br>
+<br>10:50 - 11:30<br>
+Metabolic reprogramming in the glioblastoma cell: a systems approach<br>
+Anu Raghunathan (National Chemical Laboratory, India)<br>
+<br>11:30 - 12:10<br>
+Analysing the contribution of Plasmodium falciparum to whole body glucose metabolism in malaria patients<br>
+Jacky Snoep (Stellenbosch University, South Africa)<br>
+<br>12:10 - 12:50<br>
+Exploring Trypanosoma brucei energy metabolism using modelling and metabolomic<br>
+Fiona Achar (University of Glasgow, United Kingdom)<br>
+<br>12:50 - 14:00 Lunch<br>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Session 6 - Metabolic Engineering 2</h2>
+          </div>
+          <div class="panel-body lead">
+
+Thursday 11 June 2015<br>
+<br>14:00 - 14:40<br>
+Strain design for improved productivity, yield and robustness<br>
+Radhakrishnan Mahadevan (University of Toronto, Canada)<br>
+<br>14:40 - 15:20<br>
+Enforced ATP futile cycling increases specific productivity and yield of anaerobic lactate production in Escherichia coli<br>
+Oliver Haedicke (Max-Planck-Institute, Germany)<br>
+<br>15:20 - 15:40 Coffee break<br>
+<br>15:40 - 16:20<br>
+MODCELL- rational design of modular cells for combinatorial biosynthesis of novel molecules<br>
+Cong Trinh (University of Tennessee, U.S.A.)<br>
+<br>16:20 - 17:00<br>
+Analysing the feasibility of growth-coupled product synthesis in microbial strains using the concept of elementary flux vectors<br>
+Steffen Klamt (Max Planck Institute for Dynamics of Complex Technical Systems, Germany)<br>
+<br>17:00 - 20:00 Poster session 2 & drinks<br>
+<br>20:00 Dinner<br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- S7 -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Session 7 – Omics Data Integration</h2>
+          </div>
+          <div class="panel-body lead">
+
+Friday 12 June 2015<br>
+<br>08:30 - 09:10<br>
+Mapping the fitness landscape of enzyme expression uncovers the cause of antagonism and sign epistasis between adaptive mutations<br>
+Christopher Marx (University of Idaho, U.S.A.)<br>
+<br>09:10 - 09:50<br>
+Which elementary flux modes are biologically relevant?<br>
+Juergen Zanghellini (Austrian Centre of Industrial Biotechnology, Austria)<br>
+<br>09:50 - 10:30<br>
+Pathway level culture media engineering<br>
+Rui Oliveira (Faculty of Science and Technology, University Nova de Lisboa, Portugal)<br>
+<br>10:30 - 11:00 Coffee break<br>
+<br>11:00 - 11:40<br>
+In-vivo catalytic rates estimated from proteomics match in-vitro measurements<br>
+Dan Davidi (Weizmann institute of science, Israel)<br>
+<br>11:40 - 12:20<br>
+Testing of network completion algorithms and mutant growth-rate predictions using genome-scale datasets<br>
+Igor Libourel (University of Minnesota, USA)<br>
+<br>12:20 - 12:40 Closing session<br>
+<br>12:40 Lunch<br>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">???</h2>
           </div>
           <div class="panel-body lead">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
@@ -224,38 +419,131 @@
         <div class="speaker-box">
         <h4>Friedrich Srienc</h4>
         <p>University of California San Diego, U.S.A.</p>
-        <hr>
-        Coping with noisy metabolism in the bacterial microenvironment
         </div>
-        
       </div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Markus Herrgård</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Nathan Lewis</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Daniel Machado</h4></div></div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box"><h4>Markus Herrgård</h4><p>Technical University of Denmark, Denmark</p></div>
+      </div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Nathan Lewis</h4><p>University of California San Diego, U.S.A.</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Daniel Machado</h4><p>University of Minho, Portugal</p></div></div>
     </div>
     <div class="row">
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Ferenc Pal</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Thomas Pfeiffer</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Ines Heiland</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Hyun-Seob Song</h4></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Ferenc Pal</h4><p>Biological Research Centre of the Hungarian Academy of Sciences, Hungary</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Thomas Pfeiffer</h4><p>Massey University, New Zealand</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Ines Heiland</h4><p>University of Tromsø, Norway</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Hyun-Seob Song</h4><p>Pacific Northwest National Laboratory, U.S.A.</p></div></div>
     </div>
     <div class="row">
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Stefan Mueller</h4>dasd</div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Arne Reimers</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>José Faria</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Dipali Singh </h4></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Stefan Mueller</h4>Radon Institute for Computational and Applied Mathematics (RICAM), Austria</div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Arne Reimers</h4><p>Centrum Wiskunde & Informatica, Netherlands</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>José Faria</h4><p>Argonne National Laboratory, U.S.A.</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Dipali Singh </h4><p>Oxford Brookes University, United Kingdom</p></div></div>
     </div>
     <div class="row">
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>David Heckmann</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Anna Matuszyńska</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Daniel Segre</h4></div></div>
-      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Kristopher Hunt</h4></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>David Heckmann</h4><p>HHU Duesseldorf, Germany</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Anna Matuszyńska</h4><p>Heinrich-Heine University Düsseldorf, Germany</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Daniel Segre</h4><p>Boston University, U.S.A.</p></div></div>
+      <div class="col-sm-3 text-center"><div class="speaker-box"><h4>Kristopher Hunt</h4><p>Montana State University, U.S.A.</p></div></div>
     </div>
     <div class="row">
-      <div class="col-sm-3 text-center"><h3>Speaker 9</h3><img alt="Photo of Speaker 1" class="speaker-img" src="img/speaker1.jpg"></div>
-      <div class="col-sm-3 text-center"><h3>Speaker 10</h3><img alt="Photo of Speaker 2" class="speaker-img" src="img/speaker2.jpg"></div>
-      <div class="col-sm-3 text-center"><h3>Speaker 11</h3><img alt="Photo of Speaker 3" class="speaker-img" src="img/speaker3.jpg"></div>
-      <div class="col-sm-3 text-center"><h3>Speaker 12</h3><img alt="Photo of Speaker 4" class="speaker-img" src="img/speaker4.jpg"></div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Michael Henson</h4>
+        <p>University of Massachusetts, U.S.A.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Stefan Schuster</h4>
+        <p>University of Jena, Germany</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Christoph Kaleta</h4>
+        <p>Christian-Albrechts-Universität zu Kiel, Germany</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Anu Raghunathan</h4>
+        <p>National Chemical Laboratory, India</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Jacky Snoep</h4>
+        <p>Stellenbosch University, South Africa</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Fiona Achar</h4>
+        <p>University of Glasgow, United Kingdom</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Radhakrishnan Mahadevan</h4>
+        <p>University of Toronto, Canada</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Oliver Haedicke</h4>
+        <p>Max-Planck-Institute, Germany</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Cong Trinh</h4>
+        <p>University of Tennessee, U.S.A.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Steffen Klamt</h4>
+        <p>Max Planck Institute for Dynamics of Complex Technical Systems, Germany</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Christopher Marx</h4>
+        <p>University of Idaho, U.S.A.</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Juergen Zanghellini</h4>
+        <p>Austrian Centre of Industrial Biotechnology, Austria</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Rui Oliveira</h4>
+        <p>Faculty of Science and Technology, University Nova de Lisboa, Portugal</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Dan Davidi</h4>
+        <p>Weizmann institute of science, Israel</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="speaker-box">
+        <h4>Igor Libourel</h4>
+        <p>University of Minnesota, USA</p>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+      </div>
     </div>
   </div>
 </div>
