@@ -28,6 +28,10 @@ html, body {
   color: #FFFFFF;
 }
 
+.map-box {
+  height: 300px;
+}
+
 .map-home h2 {
   font-size: 40px;
   font-weight: 700;
@@ -96,6 +100,12 @@ html, body {
   margin: 10px 10px;
   padding: 10px 0px;
   border: 4px solid currentColor;
+}
+
+.mpa-section-2 {
+  font-family: Roboto;
+  background-color: #FFFFFF;
+  opacity: 0.85;
 }
 
 /*
