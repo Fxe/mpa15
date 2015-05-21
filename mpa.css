@@ -49,7 +49,7 @@ html, body {
 } */
 
 .mpa-section h1, h2, h3 {
-  font-family: "futura-pt", Futura, sans-serif;
+  font-family: 'Patua One', cursive;
   text-transform: uppercase;
 }
 /* additional sections */
@@ -68,7 +68,20 @@ html, body {
 #about {
 }
 
+.mpa-panel {
+  font-family: 'Slabo 27px', serif;
+}
+.mpa-panel hr {
+/*
+  color: #000;
+  background-color: #000;
+  */
+  height: 3px;
+}
+
+
 .mpa-section {
+  font-family: 'Slabo 27px', serif;
   padding: 25px 75px;
   margin: 0 0 0px;
   /* green */
@@ -82,7 +95,7 @@ html, body {
 
 .mpa-section h3 {
   font-size: 40px;
-  font-family: "futura-pt", Futura, sans-serif;
+  font-family: 'Patua One', cursive;
   text-transform: uppercase;
   padding-bottom: 15px;
   border-bottom: 4px double #FFFFFF;
@@ -97,6 +110,7 @@ html, body {
 }
 
 .speaker-box {
+  height: 120px;
   margin: 10px 10px;
   padding: 10px 0px;
   border: 4px solid currentColor;

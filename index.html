@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MPA</title>
+  <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Patua+One|Slabo+27px' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.css">
   <link rel="stylesheet" href="mpa.css">
 <style type="text/css">
@@ -111,29 +112,31 @@ ul.nav-tabs.affix {
   <div class="container">
     <h2 class="text-center">Our Services</h2> <hr />
     <div class="row text-center">
-      <div class="col-sm-3 col-xs-6">
+      <div class="col-sm-4 col-xs-6">
         <i class="glyphicon glyphicon-bookmark"></i>
         <h3>Poster Printing</h3>
         <p>This service has a cost of 30€, to be paid at the event check-in process, where presenters should pick up their posters.</p>
         <p>Poster printing service will <b>NOT</b> be available at the venue.</p>
       </div>
-      <div class="col-sm-3 col-xs-6">
+      <div class="col-sm-4 col-xs-6">
         <i class="glyphicon glyphicon-map-marker"> </i>
         <h3>Location</h3>
         <h4>Bom Jesus</h4>
         <p>Bom Jesus do Monte is a Portuguese sanctuary in Tenões, outside the city of Braga, in northern Portugal. Its name means Good Jesus of the Mount.</p>
       </div>
-      <div class="col-sm-3 col-xs-6">
+      <div class="col-sm-4 col-xs-6">
         <i class="glyphicon glyphicon-road"> </i>
         <h3>Conference Shuttle</h3>
         <p>A private shuttle service, operating from Oporto’s airport to the event’s venue will be available for participants arriving on the <b>8th of June</b> and/or leaving on the <b>12th of June</b>.</p>
         <p><b>Please inform</b> the organization if you intend to take the conference shuttle to the venue’s location until the 1st of June.</p>
       </div>
+      <!-- 
       <div class="col-sm-3 col-xs-6">
         <i class="glyphicon glyphicon-glass"> </i>
         <h3>dinner ?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
       </div>
+      -->
     </div>
   </div>
 </div>
@@ -157,7 +160,7 @@ ul.nav-tabs.affix {
           <div class="panel-heading">
             <h2 class="panel-title">Session 1 - Metabolic Engineering 1</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
             Monday 8 June 2015 <br>
             <br>17:45 - 18:45 <br>
             Keynote Talk - Engineering metabolic pathways <br>
@@ -177,7 +180,7 @@ ul.nav-tabs.affix {
           <div class="panel-heading">
             <h2 class="panel-title">Session 2 – Uncovering Biological Principles</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
             Tuesday 9 June 2015<br>
             <br>09:00 - 09:40<br>
             Coping with noisy metabolism in the bacterial microenvironment<br>
@@ -208,7 +211,7 @@ ul.nav-tabs.affix {
           <div class="panel-heading">
             <h2 class="panel-title">Session 3 – Methods and Tools</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
             Tuesday 9 June 2015<br>
             <br>14:00 - 14:40<br>
             Alternate integer linear programming for computing elementary modes from genome-scale metabolic networks<br>
@@ -233,7 +236,7 @@ ul.nav-tabs.affix {
           <div class="panel-heading">
             <h2 class="panel-title">Session 4 – Applications to Photosynthetic organisms and Microbial Communities</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
             Wednesday 10 June 2015<br>
             <br>08:30 - 09:10<br>
             Investigating lipid production in a genome scale model of Phaeodactylum tricornutum<br>
@@ -266,7 +269,7 @@ ul.nav-tabs.affix {
           <div class="panel-heading">
             <h2 class="panel-title">Session 5 - Applications in Health</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
 
 Thursday 11 June 2015<br>
 <br>09:00 - 09:40<br>
@@ -295,7 +298,7 @@ Fiona Achar (University of Glasgow, United Kingdom)<br>
           <div class="panel-heading">
             <h2 class="panel-title">Session 6 - Metabolic Engineering 2</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
 
 Thursday 11 June 2015<br>
 <br>14:00 - 14:40<br>
@@ -321,12 +324,12 @@ Steffen Klamt (Max Planck Institute for Dynamics of Complex Technical Systems, G
     
     <!-- S7 -->
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">Session 7 – Omics Data Integration</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
 
 Friday 12 June 2015<br>
 <br>08:30 - 09:10<br>
@@ -351,16 +354,20 @@ Igor Libourel (University of Minnesota, USA)<br>
           </div>
         </div>
       </div>
+      <!--
       <div class="col-sm-6">
+        
         <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">???</h2>
           </div>
-          <div class="panel-body lead">
+          <div class="panel-body lead mpa-panel">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
           </div>
         </div>
+        
       </div>
+      -->
     </div>
   </div>
 </div>
@@ -384,14 +391,18 @@ Igor Libourel (University of Minnesota, USA)<br>
       </div>
     </div>
     <div class="row mpa-mid-section">
-      <div class="col-sm-6 text-center">
+      <div class="col-sm-12 text-center">
+        <h4>Computational Metabolic Pathway Analysis with OptFlux (registration required)</h4>
+        <!-- 
         <h3>Speaker 1</h3><img alt="Photo of Speaker 1" class="speaker-img" src="img/speaker2.jpg">
+        -->
       </div>
-      <div class="col-sm-6 text-center">
+      <div class="col-sm-12 text-center">
         <img alt="Optflux" src="img/optflux_logo.png">
         <p><a href="http://www.optflux.org/" target="_blank">OptFlux</a> is an open-source and modular software to support in silico metabolic engineering tasks aimed at being the reference computational application in the field. A major new release of OptFlux is now available, with several important improvements and new features.</p>
       </div>
     </div>
+    <!-- 
     <div class="row mpa-mid-section">
       <div class="col-sm-12 text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudin sodales ligula quis feugiat. Mauris lobortis sodales leo, id luctus libero placerat sit amet. Ut a luctus enim. Praesent elementum elementum lacus vitae pretium. Vivamus rutrum libero lectus, id consequat lacus ultricies pharetra. Nam feugiat, elit a pharetra elementum, nisl enim semper lacus, eu porta lacus metus pellentesque dolor. Etiam sodales congue bibendum. Praesent ac dolor quis augue gravida posuere sed sed felis. Quisque rhoncus arcu a mi porta, ut porta mi laoreet. Aenean sem enim, vulputate id justo non, pulvinar tincidunt neque. Phasellus vel faucibus velit. Suspendisse sollicitudin egestas volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris iaculis sem justo, a elementum urna hendrerit in. Quisque ante lorem, aliquam a odio et, sagittis blandit eros. Integer viverra auctor scelerisque.
@@ -399,6 +410,7 @@ Igor Libourel (University of Minnesota, USA)<br>
         Pellentesque nec nisi posuere, efficitur ante sit amet, placerat augue. Fusce et maximus nulla, sed ullamcorper metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt blandit mi non iaculis. Cras dapibus enim at risus accumsan, eget vestibulum tellus porta. In placerat nunc ante, sit amet laoreet turpis elementum molestie. Donec fringilla ut est a luctus. Etiam vehicula turpis sed libero aliquet, at porta nulla varius. Praesent justo nisl, pulvinar quis neque vel, congue congue neque. Etiam maximus enim condimentum sem aliquet maximus.
       </div>
     </div>
+    -->
   </div>
 </div>
 <!-- /workshop section -->
@@ -565,17 +577,15 @@ Igor Libourel (University of Minnesota, USA)<br>
     <div class="row">
       <div class="col-sm-6 text-center">
         <h4>Poster Sessions</h4>
-        <ul>
-          <li><b>Poster session 1</b>: Tuesday <b>9th June</b> (5 pm - 8:00pm)</li>
-          <li><b>Poster session 2</b>: Thursday <b>11th June</b> (5 pm - 8:00pm)</li>
-        </ul>
+        
+        <p><b>Poster session 1</b>: Tuesday <b>9th June</b> (5 pm - 8:00pm)</p>
+        <p><b>Poster session 2</b>: Thursday <b>11th June</b> (5 pm - 8:00pm)</p>
+        
       </div>
       <div class="col-sm-6 text-center">
         <h4>Presentation Details</h4>
-        <ul>
-          <li>The Poster board is 92 cm wide and 142 cm high (<b>portrait orientation</b>)</li>
-          <li><b>Recommended poster size:</b> DIN <b>A0</b> (84.1 cm width x 118.9 cm height).</li>
-        </ul>
+        <p>The Poster board is 92 cm wide and 142 cm high (<b>portrait orientation</b>)</p>
+        <p><b>Recommended poster size:</b> DIN <b>A0</b> (84.1 cm width x 118.9 cm height)</p>
       </div>
       <div class="col-sm-12 text-center">
         <h4>Setup</h4>
@@ -650,8 +660,7 @@ from wikipedia
         <h4>Bus</h4>
         <p>You can take a shuttle from Porto airport to Braga’s city center following the <a href="http://www.getbus.eu/index.php?seccao=2&lang=en" target="_blank">link</a>.
         <p>
-Once in the city center, urban bus services can take you close to the venue’s location (link below):
-https://www.google.pt/maps/dir/41.5559279,-8.4251856/41.5546137,-8.3776758/@41.5525872,-8.403281,15z/data=!4m2!4m1!3e3?hl=en-EN</p>
+Once in the city center, urban bus services can take you close to the venue’s location (<a href="https://www.google.pt/maps/dir/41.5559279,-8.4251856/41.5546137,-8.3776758/@41.5525872,-8.403281,15z/data=!4m2!4m1!3e3?hl=en-EN">link</a>).</p>
         <h4>Train</h4>
         <p>If you prefer traveling by train you can take the metro train to Porto (<a href="http://www.metrodoporto.pt/en/PageGen.aspx?WMCM_PaginaId=16201&estacaoOrigem=69&estacaoDestino=22;" target="_blank">link</a>).</p>
         <p>And then the train to Braga city center (<a href="http://www.cp.pt/passageiros/en/train-times/Train-time-results" target="_blank">link</a>).
