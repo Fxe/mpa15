@@ -177,6 +177,10 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  opacity: 0.85;
+}
+.workshop-pl panel {
+  opacity: 0.85;
 }
 
 .mpa-mid-section {
