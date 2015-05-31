@@ -36,7 +36,7 @@ $(document).ready(function (){
   google.maps.event.addListener(marker_mpa, 'click', function() {
     infowindow.open(map1, marker_mpa);
   });
-  marker_mpa.click();
+  //marker_mpa.click();
   
   
   var directionsDisplay = new google.maps.DirectionsRenderer();
