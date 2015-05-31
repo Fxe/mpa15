@@ -20,9 +20,24 @@ $(document).ready(function (){
     scrollwheel: false,
     disableDoubleClickZoom: true
   };
+  
   var map1 = init_google_map('#google_map', options);
   var map2 = init_google_map('#google_map_1', options);
   var map3 = init_google_map('#google_map_2', options);
+  
+  var marker_mpa = new google.maps.Marker({
+    position: latlng, map: map1
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content:  '<div class="info"><img src="img/mpa_logo.jpg" alt="" width="50px"/><strong>Metabolic Pathway Analysis 2015</strong></div>'
+  });
+  
+  infowindow.open(map1, marker_mpa);
+  google.maps.event.addListener(marker_mpa, 'click', function() {
+    infowindow.open(map1, marker_mpa);
+  });
+  marker_mpa.click();
+  
   
   var directionsDisplay = new google.maps.DirectionsRenderer();
   var directionsService = new google.maps.DirectionsService();
@@ -81,9 +96,7 @@ $(document).ready(function (){
   });
   /*
   // add listener for a click on the pin
-  google.maps.event.addListener(marker1, 'click', function() {
-    infowindow.open(map, marker1);
-  });
+
 
   // add information window
   var infowindow = new google.maps.InfoWindow({

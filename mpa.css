@@ -140,6 +140,22 @@ html, body {
   width: 140px;
 }
 
+.services a:visited {
+  color: #FFFFFF;
+}
+
+.services a:link {
+  color: #FFFFFF;
+}
+
+.services a:active {
+  color: #0d47a1;
+}
+
+.services a:hover {
+  color: #0d47a1;
+}
+
 .glyphicon-md {
   border: 3px solid #FFFFFF;
   border-radius: 50%;
