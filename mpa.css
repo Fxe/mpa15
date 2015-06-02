@@ -89,8 +89,17 @@ html, body {
   background-color: #A5D6A7;
   color: #1B5E20;
   */
+  background-image: url(img/ct-bg.png);
   background-color: #2980B9;
   color: #FFFFFF;
+}
+.mpa-fabric-bg {
+  background-image: url(img/fb-bg.png);
+  background-color: #FFFFFF;
+};
+
+.mpa-mid-section {
+  background-color: #FFFFFF;
 }
 
 .mpa-section h3 {
@@ -199,9 +208,7 @@ html, body {
   opacity: 0.85;
 }
 
-.mpa-mid-section {
-  background-color: #FFFFFF;
-}
+
 
 .mpa-mid-sponsors {
   height: 90px;
@@ -225,6 +232,7 @@ html, body {
 
 footer {
   color: #FFFFFF;
+  background-image: url(img/ct-bg.png);
   background-color: #2980B9;
   padding: 20px 0;
 }
