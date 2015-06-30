@@ -97,10 +97,25 @@ $(document).ready(function (){
   /*
   // add listener for a click on the pin
 
-
   // add information window
   var infowindow = new google.maps.InfoWindow({
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
   });
   */
+  console.log('a')
+ $.ajax({
+        type : 'GET',
+        dataType : 'json',
+        url: 'media/fotos.json',
+        success : function(data) {
+          _.each(data, function(obj) {
+            console.log(obj);
+            $('#links').append(
+              '<a href="media/fotos/' + obj.file + '" title="' + obj.title + '" data-gallery>' + 
+              '  <img class="mpa-thumbnail" src="media/fotos/thumbnail/t_' + obj.file + '" alt="' + obj.title + '">' +
+              '</a>'
+            );
+          });
+        } 
+    });
 });

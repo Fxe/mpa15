@@ -11,7 +11,10 @@ html, body {
 .pad-section img {
   /*width: 100%;*/
 }
-
+.mpa-thumbnail {
+   width: 60px;
+   height: 60px;
+  }
 /* vertical-centered text */
 .text-vcenter {
   display: table-cell;
@@ -55,6 +58,18 @@ html, body {
 /* additional sections */
 #home {
   background: url(img/bg1.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mpa-final {
+  background: url(img/mpa_foto.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
