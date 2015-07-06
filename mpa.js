@@ -63,7 +63,7 @@ $(document).ready(function (){
     //avoidTolls: Boolean,
     //region: String
     };
-  console.log(direction);
+  //console.log(direction);
   directionsService.route(direction, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
       directionsDisplay.setDirections(response);
@@ -102,14 +102,14 @@ $(document).ready(function (){
     content:  '<div class="info"><strong>This is my company</strong><br><br>My company address is here<br> 32846 Sydney</div>'
   });
   */
-  console.log('a')
+  
  $.ajax({
         type : 'GET',
         dataType : 'json',
         url: 'media/fotos.json',
         success : function(data) {
           _.each(data, function(obj) {
-            console.log(obj);
+            //console.log(obj);
             $('#links').append(
               '<a href="media/fotos/' + obj.file + '" title="' + obj.title + '" data-gallery>' + 
               '  <img class="mpa-thumbnail" src="media/fotos/thumbnail/t_' + obj.file + '" alt="' + obj.title + '">' +

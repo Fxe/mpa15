@@ -2,6 +2,42 @@
 html, body {
   height: 100%;
   width: 100%;
+  
+}
+
+.mpa-home-link-nav a:hover{
+  color: #FFFFFF;
+}
+.mpa-home-link-nav  a:link{
+  color: #FFFFFF;
+}
+.mpa-home-link-nav  a:visited{
+  color: #FFFFFF;
+}
+
+.mpa-home-link-nav {
+  font-family: 'Patua One', cursive;
+  text-transform: uppercase;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 0 0 2px #222, 0 0 2px #222;
+  /*color: #85ADFF;*/
+  color: #FFFFFF;
+  -webkit-animation-play-state: running;
+  animation-play-state: running; 
+}
+
+.book-nav {
+  left: 100%;
+  margin-left: -350px;
+}
+.photo-nav {
+  left: 100%;
+  margin-left: -150px;
 }
 
 /* padded section */
